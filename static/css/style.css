@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+
+nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #336699;
+}
+
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #007BFF;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 300px;
+    margin: 10px 0;
+}
