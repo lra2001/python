@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Egypt | History Explorer{% endblock %}
+
+{% block content %}
+<h2>Egypt</h2>
+<p>Journey through ancient Egypt and explore the majestic Pyramids of Giza, the enigmatic Sphinx, and the grandeur of
+    pharaohs.</p>
+<img src="{{ url_for('static', filename='images/egypt.jpg') }}" alt="Pyramids of Giza" class="feature-image">
+
+<h3>Fun Facts:</h3>
+<ul>
+    <li>The Great Pyramid of Giza is over 4,500 years old.</li>
+    <li>The Sphinx is carved from a single limestone ridge.</li>
+    <li>Egypt’s ancient civilization invented papyrus and hieroglyphics.</li>
+</ul>
+{% endblock %}

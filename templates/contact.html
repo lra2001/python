@@ -1,32 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>Contact</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
+{% block title %}Contact | Dream Destinations{% endblock %}
 
-<body>
-    <h1>Python Project - Contact</h1>
-    <nav>
-        <a href="/" class="{% if active_page == 'home' %}active{% endif %}">Home</a> |
-        <a href="/projects" class="{% if active_page == 'projects' %}active{% endif %}">Projects</a> |
-        <a href="/skills" class="{% if active_page == 'skills' %}active{% endif %}">Skills</a> |
-        <a href="/about" class="{% if active_page == 'about' %}active{% endif %}">About</a> |
-        <a href="/contact" class="{% if active_page == 'contact' %}active{% endif %}">Contact</a>
-    </nav>
-
-
-    <form method="POST">
-        <label>Name:</label>
-        <input type="text" name="name" required><br>
-        <label>Message:</label>
-        <textarea name="message" required></textarea><br>
-        <button type="submit">Send</button>
-    </form>
-
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-</body>
-
-</html>
+{% block content %}
+<h2>Contact Us</h2>
+<form method="post">
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br>
+    <label>Message:</label><br>
+    <textarea name="message" rows="4" required></textarea><br>
+    <button type="submit">Send</button>
+</form>
+{% endblock %}

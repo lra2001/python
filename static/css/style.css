@@ -1,26 +1,119 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #FFF0C2;
     margin: 20px;
+    color: #28444D;
 }
 
-nav a {
-    margin-right: 10px;
+a {
+    color: #28444D;
+    text-decoration: none; /* Optional: removes underline */
+}
+
+a:hover {
+    color: #E56E38; /* darker version for hover, optional */
+}
+
+h1{
+    color: #28444D;
+}
+
+h2{
+    color: #28444D;
+}
+
+h3{
+    color: #28444D;
+}
+
+header {
+    padding: 10px;
+    border-bottom: 1px solid #28444D;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* space between logo and h1 */
+}
+
+.logo {
+    height: 50px;
+}
+
+.site-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.main-nav a {
     text-decoration: none;
-    color: #336699;
+    color: #28444D;
+    padding: 0 10px;
+    border-right: 1px solid #28444D;
 }
 
-nav a.active {
+/* Remove the border from the last item */
+.main-nav a:last-child {
+    border-right: none;
+}
+
+.main-nav a.active {
     font-weight: bold;
     text-decoration: underline;
-    color: #007BFF;
+    color: #E56E38;
+}
+
+footer{
+    text-align: center;
+    color: #28444D;
 }
 
 form {
     margin-top: 20px;
 }
 
-input, textarea {
+input,
+textarea {
     width: 300px;
     margin: 10px 0;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px;
+    background-color: #6DA48F;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.destinations-preview {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.destination-card {
+    text-align: center;
+    width: 250px;
+}
+
+.destination-card img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.destination-card h3 {
+    margin-top: 10px;
+    color: #336699;
+}
+
+.feature-image {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
 }
