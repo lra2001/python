@@ -27,7 +27,7 @@
 ### Images
 
 - [Slideshow](https://www.w3schools.com/howto/howto_js_slideshow.asp)
-- [Stock Images from Pexels](https://www.pexels.com/)
+- [Stock Images from Unsplash](https://unsplash.com/)
 - [Convert image type to WebP](https://www.freeconvert.com/webp-converter)
 - [Image Resizer](https://imageresizer.com/)
 - [Create Logo](https://www.canva.com/)
