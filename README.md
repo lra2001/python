@@ -34,7 +34,9 @@
 - [Convert to favicon](https://favicon.io/favicon-converter/)
 
 ### References
-- [Hidden Ireland](https://hiddenireland.com/flora-and-fauna-wildlife-along-the-wild-atlantic-way/#:~:text=Seas%20and%20skies,hear%20bats%20whizzing%20around%20overhead.)
-- [Wilderness Ireland](https://www.wildernessireland.com/blog/irelands-marine-coastal-wildlife/)
-- [National Parks of Ireland](https://www.nationalparks.ie/)
-- [National Biodiversity Data Centre](https://biodiversityireland.ie/top10/10-species-at-risk-of-losing/)
+- [Tripadvisor - Things to Do in Egypt](https://www.tripadvisor.ie/Attractions-g294200-Activities-Egypt.html)
+- [National Geographic Kids - Ancient Egypt](https://kids.nationalgeographic.com/history/article/ancient-egypt)
+- [Tripadvisor - Things to Do in Peru](https://www.tripadvisor.ie/Attractions-g294311-Activities-Peru.html)
+- [National Geographic Kids - Inca civilization](https://kids.nationalgeographic.com/history/article/inca-civilization]https://www.valenciatravelcusco.com/passion-passport/interesting-facts-about-the-incas)
+- [National Geographic - Mysteries of the Maya](https://www.nationalgeographic.com/expeditions/destinations/north-america/land/chichen-itza-tikal-mayan-ruins-tour/)
+- [Fun Kids - Top 10 Facts About The Mayans!](https://www.funkidslive.com/learn/top-10-facts/top-10-facts-about-the-mayans/)
