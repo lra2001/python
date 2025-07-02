@@ -4,14 +4,36 @@
 
 {% block content %}
 <h2>Machu Picchu</h2>
-<p>Journey through ancient Inca and explore the majestic Pyramids of Giza, the enigmatic Sphinx, and the grandeur of
-    pharaohs.</p>
+<p>Step into the heart of the Inca Empire and uncover the breathtaking heights of Machu Picchu, the sacred citadel
+    nestled among the Andes, where stonework meets sky.</p>
 <img src="{{ url_for('static', filename='images/machu_picchu.jpg') }}" alt="Pyramids of Giza" class="feature-image">
 
-<h3>Fun Facts:</h3>
-<ul>
-    <li>The Great Pyramid of Giza is over 4,500 years old.</li>
-    <li>The Sphinx is carved from a single limestone ridge.</li>
-    <li>Egypt’s ancient civilization invented papyrus and hieroglyphics.</li>
-</ul>
+<section id="overview">
+    <h2>Quick Facts</h2>
+    <ul>
+        <li><strong>Location:</strong> Western South America</li>
+        <li><strong>Civilization:</strong> The Inca Empire (15th-16th century AD)</li>
+    </ul>
+</section>
+
+<section id="inca-culture">
+    <h2>The Inca Civilization</h2>
+    <p>The Incas built an empire stretching over 2,500 miles and left an architectural legacy—from stone-built citadels
+        to terraced fields.</p>
+    <ul>
+        <li><strong>Architectural marvels:</strong> Machu Picchu remains one of the most iconic Inca sites.</li>
+        <li><strong>Engineering feats:</strong> Extensive road networks and sophisticated terraces.</li>
+        <li><strong>Cultural richness:</strong> Advanced astronomy and weaving traditions.</li>
+    </ul>
+</section>
+
+<section id="travel-peru">
+    <h2>Top Things to Do in Peru</h2>
+    <ul>
+        <li><strong>Tripadvisor picks:</strong> Explore Cusco, Sacred Valley, Machu Picchu, Lake Titicaca, Colca Canyon,
+            Amazon rainforest - highly rated experiences.</li>
+        <li><strong>Interactive experiences:</strong> Hike the Inca Trail, visit artisanal markets, taste Peruvian
+            cuisine.</li>
+    </ul>
+</section>
 {% endblock %}

@@ -3,15 +3,48 @@
 {% block title %}Egypt | History Explorer{% endblock %}
 
 {% block content %}
-<h2>Egypt</h2>
+<h2>Egypt: From Ancient Marvels to Modern Wonders</h2>
 <p>Journey through ancient Egypt and explore the majestic Pyramids of Giza, the enigmatic Sphinx, and the grandeur of
     pharaohs.</p>
 <img src="{{ url_for('static', filename='images/egypt.jpg') }}" alt="Pyramids of Giza" class="feature-image">
+
+<section id="overview">
+    <h2>Quick Facts</h2>
+    <ul>
+        <li><strong>Capital:</strong> Cairo</li>
+        <li><strong>Era:</strong> Ancient Egypt thrived over 5,000 years ago</li>
+        <li><strong>Geography:</strong> Centered around the Nile Valley and Delta</li>
+    </ul>
+</section>
+
+<section id="ancient-egypt">
+    <h2>Ancient Egypt</h2>
+    <p>Ancient Egyptians built iconic monuments such as pyramids, temples, and kept elaborate records—over 30 miles of
+        ancient papyri reveal details about logistics during pyramid construction.</p>
+    <ul>
+        <li><strong>Pyramids of Giza:</strong> Built during the Old Kingdom; About 118-138 pyramids include the famous
+            Great Pyramid and the Sphinx.</li>
+        <li><strong>Construction techniques:</strong> Blocks (~2.5 tons) moved on sleds over wet sand to reduce
+            friction.</li>
+        <li><strong>Saqqara Step Pyramid:</strong> The earliest pyramid (~2630 BC), designed by Imhotep.</li>
+    </ul>
+</section>
+
+<section id="modern-egypt">
+    <h2>Top Things to Do Today</h2>
+    <ul>
+        <li><strong>Pyramids & Sphinx:</strong> Wander through the ancient Giza plateau.</li>
+        <li><strong>Egyptian Museum (Cairo):</strong> Home to Tutankhamun's treasures and royal mummies.</li>
+        <li><strong>Valley of the Kings (Luxor):</strong> See decorated royal tombs, including King Tut's.</li>
+        <li><strong>Khan el-Khalili Bazaar:</strong> Bustling market for spices, crafts & souvenirs.</li>
+        <li><strong>Mummification Museum (Luxor):</strong> Displays animal mummies and embalming techniques.</li>
+    </ul>
+</section>
 
 <h3>Fun Facts:</h3>
 <ul>
     <li>The Great Pyramid of Giza is over 4,500 years old.</li>
     <li>The Sphinx is carved from a single limestone ridge.</li>
-    <li>Egypt’s ancient civilization invented papyrus and hieroglyphics.</li>
+    <li>Egypt's ancient civilization invented papyrus and hieroglyphics.</li>
 </ul>
 {% endblock %}
