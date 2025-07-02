@@ -3,6 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function toggleMenu() {
-        var nav = document.getElementById('mainNav');
-        nav.classList.toggle('show');
-    }
+    var nav = document.getElementById('mainNav');
+    nav.classList.toggle('show');
+}

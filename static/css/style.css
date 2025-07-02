@@ -8,22 +8,24 @@ body {
 
 a {
     color: #28444D;
-    text-decoration: none; /* Removes underline */
+    text-decoration: none;
+    /* Removes underline */
 }
 
 a:hover {
-    color: #E56E38; /* darker version for hover */
+    color: #E56E38;
+    /* darker version for hover */
 }
 
-h1{
+h1 {
     color: #28444D;
 }
 
-h2{
+h2 {
     color: #28444D;
 }
 
-h3{
+h3 {
     color: #28444D;
 }
 
@@ -42,7 +44,8 @@ header {
 .header-top {
     display: flex;
     align-items: center;
-    gap: 10px; /* space between logo and h1 */
+    gap: 10px;
+    /* space between logo and h1 */
 }
 
 .logo {
@@ -110,6 +113,7 @@ header {
         right: 20px;
     }
 }
+
 .main-nav a:hover {
     font-weight: bold;
     color: #E56E38;
@@ -121,7 +125,7 @@ header {
     color: #E56E38;
 }
 
-footer{
+footer {
     text-align: center;
     color: #28444D;
     font-style: italic;
