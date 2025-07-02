@@ -12,7 +12,7 @@
     <a href="#destinations" class="cta-button">Start Exploring</a>
 </section>
 
-<section class="why-history-explorer">
+<section class="sub-section">
     <h2>Why History Explorer?</h2>
     <p>At History Explorer, we believe that the past holds the key to understanding our world. Travel back in time and
         experience the culture, achievements, and mysteries of great ancient civilizations. Whether you're a history
@@ -39,6 +39,34 @@
         </a>
         <h3><a href="/egypt">Egypt</a></h3>
     </div>
+</section>
+
+<section class="sub-section" id="randomDestination">
+    <h2>Click the button to get your next <strong>RANDOM</strong> destination. Are you brave enough to follow through?</h2>
+    <button class="btn btn-danger" id="startRandomDestination">Give me a suggestion!</button>
+    <!--Destination result is populated using Javascript-->
+    <p id="randomDestinationResult"></p>
+</section>
+
+<section class="sub-section">
+    <h2>We would love to hear from you!</h2>
+    <form id="travelForm">
+        <div>Tell us what was your favourite destination so far:</div>
+        <div>
+            <input type="text" id="favoriteDestination" placeholder="Favorite Destination" required>
+        </div>
+        <div>Let us know why you liked it more than other destinations:</div>
+        <div>
+            <input type="text" id="whyFavorite" placeholder="Why was this your favorite?" required>
+        </div>
+        <div>Tell us what are you looking for when you are planning a trip:</div>
+        <div>
+        <input type="text" id="tripMotivation" placeholder="What are you looking for on your trips?" required>
+        </div>
+        <button class="btn btn-success" type="submit">Send</button>
+    </form>
+    <!--Javascript populates a thank you message with the favorite destination selection, reason and travel motivation-->
+    <div id="formMessage"></div>
 </section>
 
 <section class="testimonials">
