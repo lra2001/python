@@ -340,6 +340,12 @@ footer {
     opacity: 0;
     background-color: #e6ffe6;
     color: green;
+    display: none;
+}
+
+#contactResponse.show {
+    display: block;
+    opacity: 1;
 }
 
 /* Move these outside */
@@ -351,7 +357,7 @@ footer {
     display: block;
 }
 
-.hidden {
+/* .hidden {
     display: none;
 }
 
@@ -361,7 +367,7 @@ footer {
     margin-top: 10px;
     border: 1px solid;
     border-radius: 5px;
-}
+} */
 
 @keyframes shake {
     0% { transform: translateX(0); }
