@@ -3,15 +3,16 @@ body {
     background-color: #FFF0C2;
     margin: 20px;
     color: #28444D;
+    padding-top: 130px;
 }
 
 a {
     color: #28444D;
-    text-decoration: none; /* Optional: removes underline */
+    text-decoration: none; /* Removes underline */
 }
 
 a:hover {
-    color: #E56E38; /* darker version for hover, optional */
+    color: #E56E38; /* darker version for hover */
 }
 
 h1{
@@ -27,8 +28,15 @@ h3{
 }
 
 header {
-    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFF0C2;
+    z-index: 1000;
+    padding: 10px 20px;
     border-bottom: 1px solid #28444D;
+
 }
 
 .header-top {
@@ -46,16 +54,65 @@ header {
     margin: 0;
 }
 
-.main-nav a {
-    text-decoration: none;
+/* Hamburger menu (hidden by default on large screens) */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
     color: #28444D;
-    padding: 0 10px;
-    border-right: 1px solid #28444D;
 }
 
-/* Remove the border from the last item */
-.main-nav a:last-child {
-    border-right: none;
+/* Nav styling */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+/* Show/hide navigation on small screens */
+@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        background-color: #FFF0C2;
+        padding: 10px 0;
+        border-top: 1px solid #28444D;
+    }
+
+    .main-nav.show {
+        display: flex;
+    }
+
+    .main-nav a {
+        padding: 15px 0;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        font-size: 18px;
+        width: 100%;
+        display: block;
+    }
+
+    .main-nav a:last-child {
+        border-bottom: none;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+.main-nav a:hover {
+    font-weight: bold;
+    color: #E56E38;
 }
 
 .main-nav a.active {
@@ -67,6 +124,11 @@ header {
 footer{
     text-align: center;
     color: #28444D;
+    font-style: italic;
+    font-size: small;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
 }
 
 form {
@@ -116,4 +178,68 @@ textarea {
     display: block;
     margin: 20px auto;
     border-radius: 8px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #E56E38;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #c95b2d;
+}
+
+.why-history-explorer {
+    background-color: #fff7e6;
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.testimonials {
+    background-color: #fff7e6;
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.testimonial {
+    margin-bottom: 30px;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #28444D;
+}
+
+/* Hover effect for destination images */
+.destination-card img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.destination-card img:hover {
+    transform: scale(1.05);
 }

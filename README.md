@@ -3,10 +3,18 @@
 ## Resources
 
 ### Code
+- [Download Python](https://www.python.org/downloads/)
+- [Install Flask](https://flask.palletsprojects.com/en/stable/installation/)
 - [CSS External Stylesheet](https://www.w3schools.com/css/css_external.asp)
 - [HTML <script> src Attribute](https://www.w3schools.com/TAgs/att_script_src.asp)
 - [Font Awesome](https://fontawesome.com/kits/5860ee4324/setup)
 - [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+
+### Error Fixes
+- [Stach Overflow - 'pip' is not recognized as an internal or external command](https://stackoverflow.com/questions/23708898/pip-is-not-recognized-as-an-internal-or-external-command)
+- [Stack Overflow - Python not recognised as command](https://stackoverflow.com/questions/53337078/python-not-recognised-as-command)
+- [Stack Overflow - How do I solve "error: externally-managed-environment" every time I use pip 3?'](https://stackoverflow.com/questions/75608323/how-do-i-solve-error-externally-managed-environment-every-time-i-use-pip-3)
+- [Stack Overflow - ModuleNotFoundError: No module named 'flask'](https://stackoverflow.com/questions/69623440/python-modulenotfounderror-no-module-named-flask)
 
 ### Colors
 - [Complementary Color Schemes](https://www.w3schools.com/colors/colors_complementary.asp)

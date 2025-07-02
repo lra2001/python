@@ -15,15 +15,20 @@
             <a href="{{ url_for('home') }}">
                 <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
             </a>
-            <h1>History Explorer</h1>
+            <h1 class="site-title">History Explorer</h1>            
         </div>
-        <nav class="main-nav">
+
+        <nav class="main-nav" id="mainNav">
             <a href="/" class="{% if active_page == 'home' %}active{% endif %}">Home</a>
             <a href="/machu_picchu" class="{% if active_page == 'machu_picchu' %}active{% endif %}">Machu Picchu</a>
             <a href="/mayans" class="{% if active_page == 'mayans' %}active{% endif %}">Mayans</a>
             <a href="/egypt" class="{% if active_page == 'egypt' %}active{% endif %}">Egypt</a>
             <a href="/contact" class="{% if active_page == 'contact' %}active{% endif %}">Contact</a>
         </nav>
+        <div>
+            <!-- Hamburger icon for smaller screens -->
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        </div>
     </header>
 
     <br>
