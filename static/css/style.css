@@ -303,12 +303,12 @@ li {
 }
 
 /* Fading animation */
-.fade {
-    animation-name: fade;
+.switch {
+    animation-name: switch;
     animation-duration: 1.5s;
 }
 
-@keyframes fade {
+@keyframes switch {
     from {
         opacity: .4
     }

@@ -15,6 +15,7 @@
 - [Stack Overflow - Python not recognised as command](https://stackoverflow.com/questions/53337078/python-not-recognised-as-command)
 - [Stack Overflow - How do I solve "error: externally-managed-environment" every time I use pip 3?'](https://stackoverflow.com/questions/75608323/how-do-i-solve-error-externally-managed-environment-every-time-i-use-pip-3)
 - [Stack Overflow - ModuleNotFoundError: No module named 'flask'](https://stackoverflow.com/questions/69623440/python-modulenotfounderror-no-module-named-flask)
+- [Stack Overflow - Images appear then disappear in slideshow gallery after approximately 2 seconds](https://stackoverflow.com/questions/76163399/images-appear-then-disappear-in-slideshow-gallery-after-approximately-2-seconds)
 
 ### Colors
 - [Complementary Color Schemes](https://www.w3schools.com/colors/colors_complementary.asp)
@@ -24,6 +25,7 @@
 - [Canva Color Wheel](https://www.canva.com/colors/color-wheel/)
 
 ### Buttons
+- [Bootstrap Buttons](https://www.w3schools.com/bootstrap/bootstrap_buttons.asp)
 - [CSS Buttons](https://www.w3schools.com/css/css3_buttons.asp)
 - [JavaScript HTML DOM EventListener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
 - [Difference between DOMContentLoaded and load Events](https://www.geeksforgeeks.org/difference-between-domcontentloaded-and-load-events/)
