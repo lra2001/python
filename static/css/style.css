@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    text-align: center;
     background-color: #FFF0C2;
     margin: 20px;
     color: #28444D;
@@ -330,59 +331,104 @@ footer {
     bottom: 0;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    section {
-        padding: 1rem;
-    }
-
-    .main-nav {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-        background-color: #FFF0C2;
-        padding: 10px 0;
-        border-top: 1px solid #28444D;
-    }
-
-    .main-nav.show {
-        display: flex;
-    }
-
-    .main-nav a {
-        padding: 15px 0;
-        border: none;
-        border-bottom: 1px solid #ccc;
-        font-size: 18px;
-        width: 100%;
-        display: block;
-    }
-
-    .main-nav a:last-child {
-        border-bottom: none;
-    }
-
-    .hamburger {
-        display: block;
-        font-size: 30px;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
+#contactResponse {
+    margin-top: 1em;
+    padding: 1em;
+    border: 1px solid green;
+    border-radius: 5px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    background-color: #e6ffe6;
+    color: green;
 }
 
-/* Slideshow responsiveness */
-@media only screen and (max-width: 300px) {
-    .text {
-        font-size: 11px
+/* Move these outside */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    height: 1.2em;
+    margin-top: 2px;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.3s;
+}
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        body {
+            font-size: 16px;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        section {
+            padding: 1rem;
+        }
+
+        .main-nav {
+            display: none;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+            background-color: #FFF0C2;
+            padding: 10px 0;
+            border-top: 1px solid #28444D;
+        }
+
+        .main-nav.show {
+            display: flex;
+        }
+
+        .main-nav a {
+            padding: 15px 0;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            font-size: 18px;
+            width: 100%;
+            display: block;
+        }
+
+        .main-nav a:last-child {
+            border-bottom: none;
+        }
+
+        .hamburger {
+            display: block;
+            font-size: 30px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    }
+
+    /* Slideshow responsiveness */
+    @media only screen and (max-width: 300px) {
+        .text {
+            font-size: 11px
+        }
     }
 }

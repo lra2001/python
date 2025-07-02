@@ -41,9 +41,72 @@ if (travelForm) {
 // Random destination selector
 const randomDestination = document.getElementById('travelForm');
 if (randomDestination) {
-document.getElementById('randomDestination').addEventListener('click', () => {
-    const destinations = ['Tokyo', 'Paris', 'Sidney', 'New York', 'Rio de Janeiro', 'Cairo', 'Stockholm', 'Machu Picchu', 'Budapest', 'Lisbon', 'London', 'Karachi', 'Washington', 'Cape Town'];
-    const random = destinations [Math.floor(Math.random() * destinations.length)];
-    document.getElementById('randomDestinationResult').textContent = `Congratulations, prepare for your next trip to ${random}!`;
-});
+    document.getElementById('randomDestination').addEventListener('click', () => {
+        const destinations = ['Tokyo', 'Paris', 'Sidney', 'New York', 'Rio de Janeiro', 'Cairo', 'Stockholm', 'Machu Picchu', 'Budapest', 'Lisbon', 'London', 'Karachi', 'Washington', 'Cape Town'];
+        const random = destinations[Math.floor(Math.random() * destinations.length)];
+        document.getElementById('randomDestinationResult').textContent = `Congratulations, prepare for your next trip to ${random}!`;
+    });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const contactForm = document.getElementById('contactForm');
+  const subjectError = document.getElementById('subjectError');
+  const nameError = document.getElementById('nameError');
+  const messageError = document.getElementById('messageError');
+  const responseDiv = document.getElementById('contactResponse');
+  const messageField = document.getElementById('message');
+  const charCount = document.getElementById('charCount');
+
+  // Character count live update
+  if (messageField && charCount) {
+    messageField.addEventListener('input', () => {
+      charCount.textContent = `${messageField.value.length} / 500 characters`;
+    });
+  }
+
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Reset error messages & response
+    subjectError.textContent = '';
+    nameError.textContent = '';
+    messageError.textContent = '';
+    responseDiv.textContent = '';
+    responseDiv.classList.remove('show');
+    responseDiv.classList.add('hidden');
+
+    let isValid = true;
+
+    if (!this.subject.value.trim()) {
+      subjectError.textContent = 'Please select a reason for contact.';
+      isValid = false;
+    }
+
+    if (!this.name.value.trim()) {
+      nameError.textContent = 'Please enter your name.';
+      isValid = false;
+    }
+
+    if (!this.message.value.trim()) {
+      messageError.textContent = 'Please enter a message.';
+      isValid = false;
+    }
+
+    if (!isValid) {
+      contactForm.classList.add('shake');
+      setTimeout(() => contactForm.classList.remove('shake'), 300);
+      return;
+    }
+
+    // If valid
+    responseDiv.innerHTML = `Thanks for reaching out, <strong>${this.name.value.trim()}</strong>! We'll be in touch with you soon.`;
+    responseDiv.style.borderColor = "green";
+    responseDiv.style.backgroundColor = "#e6ffe6";
+    responseDiv.style.color = "green";
+    responseDiv.classList.remove("hidden");
+    responseDiv.classList.add("show");
+
+    contactForm.reset();
+    charCount.textContent = '0 / 500 characters';
+  });
+});
