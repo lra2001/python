@@ -3,12 +3,12 @@
 {% block title %}Egypt | History Explorer{% endblock %}
 
 {% block content %}
-<h2>Egypt - From Ancient Marvels to Modern Wonders</h2>
+<h2>The Egyptian Civilization</h2>
 <p>Journey through ancient Egypt and explore the majestic Pyramids of Giza, the enigmatic Sphinx, and the grandeur of
     pharaohs.</p>
-<img src="{{ url_for('static', filename='images/egypt.jpg') }}" alt="Pyramids of Giza" class="feature-image">
+<img src="{{ url_for('static', filename='images/egypt.webp') }}" alt="Pyramids of Giza" class="feature-image">
 
-<section id="overview">
+<section id="highlights">
     <h2>Quick Facts</h2>
     <ul>
         <li><strong>Capital:</strong> Cairo</li>
@@ -17,7 +17,7 @@
     </ul>
 </section>
 
-<section id="ancient-egypt">
+<section id="highlights">
     <h2>Ancient Egypt</h2>
     <p>Ancient Egyptians built iconic monuments such as pyramids, temples, and kept elaborate records—over 30 miles of
         ancient papyri reveal details about logistics during pyramid construction.</p>
@@ -30,7 +30,7 @@
     </ul>
 </section>
 
-<section id="modern-egypt">
+<section id="highlights">
     <h2>Top Things to Do Today</h2>
     <ul>
         <li><strong>Pyramids & Sphinx:</strong> Wander through the ancient Giza plateau.</li>
@@ -41,10 +41,56 @@
     </ul>
 </section>
 
-<h3>Fun Facts:</h3>
-<ul>
-    <li>The Great Pyramid of Giza is over 4,500 years old.</li>
-    <li>The Sphinx is carved from a single limestone ridge.</li>
-    <li>Egypt's ancient civilization invented papyrus and hieroglyphics.</li>
-</ul>
+<section id="highlights">
+    <h2>Fun Facts:</h2>
+    <ul>
+        <li>The Great Pyramid of Giza is over 4,500 years old.</li>
+        <li>The Sphinx is carved from a single limestone ridge.</li>
+        <li>Egypt's ancient civilization invented papyrus and hieroglyphics.</li>
+    </ul>
+</section>
+
+<section id="slideshow">
+    <h2>Slideshow</h2>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">Image 1 of 5</div>
+            <img src="{{ url_for('static', filename='images/camel.webp') }}" alt="Camel in Egypt"
+                class="feature-image">
+            <div class="text">Camel in Egypt</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">Image 2 of 5</div>
+            <img src="{{ url_for('static', filename='images/egypt_monument_1.webp') }}" alt="Monument 1 in Egypt"
+                class="feature-image">
+            <div class="text">Monument in Egypt 1</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">Image 3 of 5</div>
+            <img src="{{ url_for('static', filename='images/egypt_monument_2.webp') }}" alt="Monument 2 in Egypt"
+                class="feature-image">
+            <div class="text">Monument in Egypt 2</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">Image 4 of 5</div>
+            <img src="{{ url_for('static', filename='images/egypt_monument_3.webp') }}" alt="Monument 3 in Egypt"
+                class="feature-image">
+            <div class="text">Monument in Egypt 3</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">Image 5 of 5</div>
+            <img src="{{ url_for('static', filename='images/egypt.webp') }}" alt="Sphinx in Egypt"
+                class="feature-image">
+            <div class="text">Sphinx in Egypt</div>
+        </div>
+        <h5>Slideshow changing image every 3 seconds</h5>
+    </div>
+</section>
+
 {% endblock %}

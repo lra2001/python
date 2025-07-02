@@ -3,7 +3,7 @@ body {
     background-color: #FFF0C2;
     margin: 20px;
     color: #28444D;
-    padding-top: 130px;
+    padding-top: 100px;
 }
 
 a {
@@ -26,6 +26,11 @@ h2 {
 }
 
 h3 {
+    color: #28444D;
+}
+
+h5 {
+    text-align: center;
     color: #28444D;
 }
 
@@ -74,44 +79,6 @@ header {
     gap: 15px;
     flex-wrap: wrap;
     padding-top: 10px;
-}
-
-/* Show/hide navigation on small screens */
-@media (max-width: 768px) {
-    .main-nav {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-        background-color: #FFF0C2;
-        padding: 10px 0;
-        border-top: 1px solid #28444D;
-    }
-
-    .main-nav.show {
-        display: flex;
-    }
-
-    .main-nav a {
-        padding: 15px 0;
-        border: none;
-        border-bottom: 1px solid #ccc;
-        font-size: 18px;
-        width: 100%;
-        display: block;
-    }
-
-    .main-nav a:last-child {
-        border-bottom: none;
-    }
-
-    .hamburger {
-        display: block;
-        font-size: 30px;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
 }
 
 .main-nav a:hover {
@@ -246,4 +213,159 @@ textarea {
 
 .destination-card img:hover {
     transform: scale(1.05);
+}
+
+#highlights {
+    background-color: #fff7dd;
+}
+
+
+
+/* Slideshow specific image styling */
+#slideshow .mySlides .feature-image {
+    width: 100% !important;
+    /* Full width for slideshow images */
+    max-width: 100% !important;
+    /* Remove max-width limitation */
+    margin: 0 !important;
+    /* Remove margin */
+    border-radius: 0 !important;
+    /* Remove border-radius */
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Slideshow image styling */
+.mySlides {
+    position: relative;
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+/* Caption text */
+.text {
+    color: #28444D;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-style: italic;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    z-index: 10;
+    max-width: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Photo number text (1/5 etc) */
+.numbertext {
+    color: #28444D;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    z-index: 10;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/* Styling for the footer */
+footer {
+    text-align: center;
+    color: #28444D;
+    font-style: italic;
+    font-size: small;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .main-nav {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        background-color: #FFF0C2;
+        padding: 10px 0;
+        border-top: 1px solid #28444D;
+    }
+
+    .main-nav.show {
+        display: flex;
+    }
+
+    .main-nav a {
+        padding: 15px 0;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        font-size: 18px;
+        width: 100%;
+        display: block;
+    }
+
+    .main-nav a:last-child {
+        border-bottom: none;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+/* Slideshow responsiveness */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
 }

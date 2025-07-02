@@ -3,12 +3,12 @@
 {% block title %}Machu Picchu | History Explorer{% endblock %}
 
 {% block content %}
-<h2>Incas - Machu Picchu</h2>
+<h2>The Inca Civilization</h2>
 <p>Step into the heart of the Inca Empire and uncover the breathtaking heights of Machu Picchu, the sacred citadel
     nestled among the Andes, where stonework meets sky.</p>
-<img src="{{ url_for('static', filename='images/machu_picchu.jpg') }}" alt="Pyramids of Giza" class="feature-image">
+<img src="{{ url_for('static', filename='images/machu_picchu.webp') }}" alt="Pyramids of Giza" class="feature-image">
 
-<section id="overview">
+<section id="highlights">
     <h2>Quick Facts</h2>
     <ul>
         <li><strong>Location:</strong> Western South America</li>
@@ -16,7 +16,7 @@
     </ul>
 </section>
 
-<section id="inca-culture">
+<section id="highlights">
     <h2>The Inca Civilization</h2>
     <p>The Incas built an empire stretching over 2,500 miles and left an architectural legacy—from stone-built citadels
         to terraced fields.</p>
@@ -27,7 +27,7 @@
     </ul>
 </section>
 
-<section id="travel-peru">
+<section id="highlights">
     <h2>Top Things to Do in Peru</h2>
     <ul>
         <li><strong>Tripadvisor picks:</strong> Explore Cusco, Sacred Valley, Machu Picchu, Lake Titicaca, Colca Canyon,
@@ -36,4 +36,48 @@
             cuisine.</li>
     </ul>
 </section>
+
+<section id="slideshow">
+    <h2>Slideshow</h2>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">Image 1 of 5</div>
+            <img src="{{ url_for('static', filename='images/traditional_inca_1.webp') }}" alt="Traditional Clothes 2"
+                class="feature-image">
+            <div class="text">Traditional Clothes 1</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">Image 2 of 5</div>
+            <img src="{{ url_for('static', filename='images/inca_statue_1.webp') }}" alt="Inca Statue 1"
+                class="feature-image">
+            <div class="text">Inca Statue 1</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">Image 3 of 5</div>
+            <img src="{{ url_for('static', filename='images/llama.webp') }}" alt="Llama in Peru"
+                class="feature-image">
+            <div class="text">Llama in Peru</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">Image 4 of 5</div>
+            <img src="{{ url_for('static', filename='images/inca_statue_2.webp') }}" alt="Inca Statue 2"
+                class="feature-image">
+            <div class="text">Inca Statue 2</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">Image 5 of 5</div>
+            <img src="{{ url_for('static', filename='images/traditional_inca_2.webp') }}" alt="Traditional Clothes 2"
+                class="feature-image">
+            <div class="text">Traditional Clothes 2</div>
+        </div>
+        <h5>Slideshow changing image every 3 seconds</h5>
+    </div>
+</section>
+
 {% endblock %}

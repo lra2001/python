@@ -6,9 +6,9 @@
 <h2>The Mayan Civilization</h2>
 <p>Travel deep into the jungles of Mesoamerica and discover the wonders of the Mayan Civilization—from towering temples
     and lost cities to a legacy written in stars and stone.</p>
-<img src="{{ url_for('static', filename='images/mayans.jpg') }}" alt="Pyramids of Giza" class="feature-image">
+<img src="{{ url_for('static', filename='images/mayans.webp') }}" alt="Pyramids of Giza" class="feature-image">
 
-<section id="overview">
+<section id="highlights">
     <h2>Quick Facts</h2>
     <ul>
         <li><strong>Timeline:</strong> Classic Period: 250-900 AD</li>
@@ -16,7 +16,7 @@
     </ul>
 </section>
 
-<section id="mayan-mysteries">
+<section id="highlights">
     <h2>Mayan Civilization Highlights</h2>
     <p>The Maya left behind majestic stone cities, astronomical observatories, and complex writings that still captivate
         archaeologists.</p>
@@ -27,4 +27,48 @@
         <li><strong>Top 10 facts:</strong> From chocolate origins to zero concept, their achievements were vast.</li>
     </ul>
 </section>
+
+<section id="slideshow">
+    <h2>Slideshow</h2>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">Image 1 of 5</div>
+            <img src="{{ url_for('static', filename='images/mayan_iguana.webp') }}" alt="Mayan Iguana"
+                class="feature-image">
+            <div class="text">Mayan Iguana</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">Image 2 of 5</div>
+            <img src="{{ url_for('static', filename='images/mayan_carved_faces.webp') }}" alt="Mayan Carved Faces"
+                class="feature-image">
+            <div class="text">Mayan Carved Faces</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">Image 3 of 5</div>
+            <img src="{{ url_for('static', filename='images/mayan_monument.webp') }}" alt="Mayan Monument"
+                class="feature-image">
+            <div class="text">Mayan Monument</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">Image 4 of 5</div>
+            <img src="{{ url_for('static', filename='images/mayan_city.webp') }}" alt="Mayan City"
+                class="feature-image">
+            <div class="text">Mayan City</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">Image 5 of 5</div>
+            <img src="{{ url_for('static', filename='images/mayan_fire.webp') }}" alt="Mayan Fire"
+                class="feature-image">
+            <div class="text">Mayan Fire</div>
+        </div>
+        <h5>Slideshow changing image every 3 seconds</h5>
+    </div>
+</section>
+
 {% endblock %}
