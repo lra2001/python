@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const randomBtn = document.getElementById('randomDestination');
     if (randomBtn) {
       randomBtn.addEventListener('click', () => {
-        const destinations = ['Tokyo', 'Paris', 'Sidney', 'New York', 'Rio de Janeiro', 'Cairo', 'Stockholm', 'Machu Picchu', 'Budapest', 'Lisbon', 'London', 'Karachi', 'Washington', 'Cape Town'];
+        const destinations = ['Tokyo', 'Paris', 'Sidney', 'New York', 'Rio de Janeiro', 'Cairo', 'Stockholm', 'Machu Picchu', 'Budapest', 'Lisbon', 'London', 'Karachi', 'Washington', 'Cape Town', 'Athens', 'Mexico City', 'Buenos Aires', 'Beijing'];
         const random = destinations[Math.floor(Math.random() * destinations.length)];
         const resultEl = document.getElementById('randomDestinationResult');
         if (resultEl) {
