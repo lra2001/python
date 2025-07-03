@@ -1,10 +1,10 @@
-  // Toggle menu function (you can leave it here or outside)
-  function toggleMenu() {
-    const nav = document.getElementById('mainNav');
-    nav.classList.toggle('show');
-  }
-  document.addEventListener("DOMContentLoaded", function () {
-    console.log("Testing - JavaScript is working!");
+// Toggle menu function (you can leave it here or outside)
+function toggleMenu() {
+  const nav = document.getElementById('mainNav');
+  nav.classList.toggle('show');
+}
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("Testing - JavaScript is working!");
 
   const hamburger = document.querySelector(".hamburger");
   const mainNav = document.getElementById("mainNav");
