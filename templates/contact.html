@@ -5,6 +5,7 @@
 {% block content %}
 
 <h2>Contact Us</h2>
+<!-- Add novalidate so the form submission validation is done via js instead of the browser -->
 <form method="post" id="contactForm" novalidate>
     <label for="subject">Reason for Contact:</label><br>
     <select id="subject" name="subject" required>
@@ -15,6 +16,7 @@
         <option value="help">Need Help</option>
     </select>
     <br>
+    <!-- Add error message class/id for js validation on all form items -->
     <span class="error-message" id="subjectError"></span><br>
 
     <label for="name">Name:</label><br>

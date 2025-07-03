@@ -1,11 +1,14 @@
-// Toggle menu function (you can leave it here or outside)
+// Toggle menu function
 function toggleMenu() {
   const nav = document.getElementById('mainNav');
   nav.classList.toggle('show');
 }
+
+// Ensure JavaScript is running on page
 document.addEventListener("DOMContentLoaded", function () {
   console.log("Testing - JavaScript is working!");
 
+// display menu items when clicking on the hamburger menu
   const hamburger = document.querySelector(".hamburger");
   const mainNav = document.getElementById("mainNav");
 
@@ -45,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
       this.reset();
     });
 
-    // Random destination selector (make sure you have #randomDestination and #randomDestinationResult in your HTML)
+    // Selects a destination at random from the array provided
     const randomBtn = document.getElementById('randomDestination');
     if (randomBtn) {
       randomBtn.addEventListener('click', () => {
@@ -59,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Contact form
+  // Contact form, including validation (error and success)
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     const subjectError = document.getElementById('subjectError');

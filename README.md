@@ -7,8 +7,9 @@
 - [Install Flask](https://flask.palletsprojects.com/en/stable/installation/)
 - [CSS External Stylesheet](https://www.w3schools.com/css/css_external.asp)
 - [HTML <script> src Attribute](https://www.w3schools.com/TAgs/att_script_src.asp)
-- [Font Awesome](https://fontawesome.com/kits/5860ee4324/setup)
+- [Blueprint YAML Reference](https://render.com/docs/blueprint-spec)
 - [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+- [w3chools - used multiple times for html, css, javascript and python](https://www.w3schools.com/)
 
 ### Error Fixes
 - [Stach Overflow - 'pip' is not recognized as an internal or external command](https://stackoverflow.com/questions/23708898/pip-is-not-recognized-as-an-internal-or-external-command)
@@ -17,22 +18,9 @@
 - [Stack Overflow - ModuleNotFoundError: No module named 'flask'](https://stackoverflow.com/questions/69623440/python-modulenotfounderror-no-module-named-flask)
 - [Stack Overflow - Images appear then disappear in slideshow gallery after approximately 2 seconds](https://stackoverflow.com/questions/76163399/images-appear-then-disappear-in-slideshow-gallery-after-approximately-2-seconds)
 
-### Colors
-- [Complementary Color Schemes](https://www.w3schools.com/colors/colors_complementary.asp)
-- [Khroma](https://www.khroma.co/generator)
-- [Coolors](https://coolors.co/6495ed-dbc7be-161925-23395b)
-- [HEX to RGBA Converter](https://codebeautify.org/hex-to-rgba-converter)
-- [Canva Color Wheel](https://www.canva.com/colors/color-wheel/)
-
 ### Buttons
 - [Bootstrap Buttons](https://www.w3schools.com/bootstrap/bootstrap_buttons.asp)
 - [CSS Buttons](https://www.w3schools.com/css/css3_buttons.asp)
-- [JavaScript HTML DOM EventListener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
-- [Difference between DOMContentLoaded and load Events](https://www.geeksforgeeks.org/difference-between-domcontentloaded-and-load-events/)
-
-### Darkmode
-- [How TO - Toggle Dark Mode](https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp)
-- [Dark Mode UI Best Practices](https://www.designstudiouiux.com/blog/dark-mode-ui-design-best-practices/)
 
 ### Images
 

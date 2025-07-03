@@ -32,6 +32,3 @@ def contact():
         message = request.form.get('message')
         print(f"Message from {name}: {message}")
     return render_template('contact.html', active_page='contact')
-
-if __name__ == '__main__':
-    app.run(debug=True)
