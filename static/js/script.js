@@ -1,10 +1,18 @@
-document.addEventListener("DOMContentLoaded", function () {
-  console.log("Testing - JavaScript is working!");
-
   // Toggle menu function (you can leave it here or outside)
   function toggleMenu() {
-    var nav = document.getElementById('mainNav');
+    const nav = document.getElementById('mainNav');
     nav.classList.toggle('show');
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    console.log("Testing - JavaScript is working!");
+
+  const hamburger = document.querySelector(".hamburger");
+  const mainNav = document.getElementById("mainNav");
+
+  if (hamburger && mainNav) {
+    hamburger.addEventListener("click", () => {
+      mainNav.classList.toggle("show");
+    });
   }
 
   // Slideshow
@@ -56,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (contactForm) {
     const subjectError = document.getElementById('subjectError');
     const nameError = document.getElementById('nameError');
+    const mailError = document.getElementById('mailError');
     const messageError = document.getElementById('messageError');
     const responseDiv = document.getElementById('contactResponse');
     const messageField = document.getElementById('message');
@@ -74,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Reset error messages & response
       subjectError.textContent = '';
       nameError.textContent = '';
+      mailError.textContent = '';
       messageError.textContent = '';
       responseDiv.textContent = '';
       responseDiv.classList.remove('show');
@@ -81,17 +91,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
       let isValid = true;
 
-      if (!this.subject.value.trim()) {
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const subject = this.subject.value.trim();
+      const name = this.name.value.trim();
+      const mail = this.mail.value.trim();
+      const message = this.message.value.trim();
+
+      if (!subject) {
         subjectError.textContent = 'Please select a reason for contact.';
         isValid = false;
       }
 
-      if (!this.name.value.trim()) {
+      if (!name) {
         nameError.textContent = 'Please enter your name.';
         isValid = false;
       }
 
-      if (!this.message.value.trim()) {
+      if (!mail) {
+        mailError.textContent = 'Please enter your email address.';
+        isValid = false;
+      } else if (!emailPattern.test(mail)) {
+        mailError.textContent = 'Please enter a valid email address.';
+        isValid = false;
+      }
+
+      if (!message) {
         messageError.textContent = 'Please enter a message.';
         isValid = false;
       }

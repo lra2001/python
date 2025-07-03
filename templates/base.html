@@ -13,10 +13,14 @@
 <body>
     <header>
         <div class="header-top">
-            <a href="{{ url_for('home') }}">
-                <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
-            </a>
-            <h1 class="site-title">History Explorer</h1>
+            <div class="brand">
+                <a href="{{ url_for('home') }}">
+                    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+                </a>
+                <h1 class="site-title">History Explorer</h1>
+            </div>
+            <!-- Hamburger icon for smaller screens -->
+            <button class="hamburger">&#9776;</button>
         </div>
 
         <nav class="main-nav" id="mainNav">
@@ -26,10 +30,6 @@
             <a href="/egypt" class="{% if active_page == 'egypt' %}active{% endif %}">Egypt</a>
             <a href="/contact" class="{% if active_page == 'contact' %}active{% endif %}">Contact</a>
         </nav>
-        <div>
-            <!-- Hamburger icon for smaller screens -->
-            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-        </div>
     </header>
 
     <br>
